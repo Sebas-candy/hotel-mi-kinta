@@ -332,3 +332,71 @@ footer {
   position: relative;
   z-index: 10;
 }
+/* --- NAVEGACIÓN CORREGIDA --- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background-color: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Corregido: ocupa todo el ancho */
+  box-sizing: border-box; /* Evita desbordamientos */
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #38bdf8;
+  white-space: nowrap; /* Evita que el logo se divida en varias líneas */
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #e2e8f0;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #38bdf8;
+}
+
+/* --- ADAPTACIÓN A PANTALLAS PEQUEÑAS (CELULARES) --- */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Alinea logo y menú verticalmente */
+    gap: 0.8rem;
+    padding: 0.8rem 1rem;
+  }
+
+  .nav-links {
+    gap: 0.8rem;
+    flex-wrap: wrap; /* Si no caben, bajan de forma ordenada */
+    justify-content: center;
+  }
+
+  .nav-links a {
+    font-size: 0.85rem; /* Tamaño de letra más cómodo para celular */
+  }
+
+  /* Ajuste de títulos en Hero para móvil */
+  .hero-title {
+    font-size: 2.2rem; /* Reduce el tamaño para que no se parta tan brusco */
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+}
