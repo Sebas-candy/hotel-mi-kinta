@@ -2,73 +2,106 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hotel Mi Quinta - Rivera, Huila</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Hotel Mi Kinta - Rivera, Huila</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- Navegación -->
   <nav class="navbar">
-    <div class="logo">Hotel Mi Quinta</div>
+    <div class="logo">Hotel Mi Kinta</div>
     <ul class="nav-links">
       <li><a href="#hero">Inicio</a></li>
-      <li><a href="#nosotros">El Hotel</a></li>
+      <li><a href="#hotel">El Hotel</a></li>
       <li><a href="#habitaciones">Habitaciones</a></li>
       <li><a href="#servicios">Servicios</a></li>
       <li><a href="#contacto">Contacto</a></li>
     </ul>
   </nav>
 
-  <!-- Hero Section (Fachada principal) -->
-  <header id="hero" class="hero-section" style="background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.85)), url('img/hotel.jpeg');">
+  <!-- Hero Section -->
+  <header id="hero" class="hero-section">
+    <div class="hero-overlay"></div>
+    <img src="img/hotel.jpeg" alt="Fachada Hotel Mi Kinta" class="hero-bg-img">
     <div class="hero-content">
-      <span class="hero-subtitle">Rivera, Huila</span>
-      <h1 class="hero-title">Hotel Mi Quinta</h1>
+      <span class="hero-subtitle">RIVERA, HUILA</span>
+      <h1 class="hero-title">Hotel Mi Kinta</h1>
       <p class="hero-description">Comodidad, ambiente acogedor y el mejor descanso en el corazón de Rivera. Tu lugar ideal cerca de las termales.</p>
       <a href="#habitaciones" class="btn-primary">Ver Habitaciones</a>
     </div>
   </header>
 
-  <!-- Sección Sobre el Hotel -->
-  <section id="nosotros" class="section">
+  <!-- Sección El Hotel -->
+  <section id="hotel" class="section">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">Ubicación & Confort</span>
-        <h2>Bienvenidos a Rivera</h2>
+        <span class="section-tag">BIENVENIDOS</span>
+        <h2>Sobre Hotel Mi Kinta</h2>
       </div>
-      <div class="about-content" style="text-align: center; max-width: 800px; margin: 0 auto; color: #94a3b8;">
-        <p>Ubicados estratégicamente en la zona urbana de Rivera, Huila, ofrecemos una estancia tranquila, fresca y familiar. Contamos con amplias instalaciones para recibir a turistas, familias y grupos.</p>
-      </div>
+      <p class="section-desc">
+        Ubicados en un punto privilegiado de Rivera, Huila, ofrecemos una experiencia de hospedaje cómoda y tranquila para familias, parejas y viajeros. Disfruta de nuestras amplias zonas y la cercanía a los principales atractivos turísticos de la región.
+      </p>
     </div>
   </section>
 
-  <!-- Sección Habitaciones e Instalaciones -->
+  <!-- Sección Habitaciones -->
   <section id="habitaciones" class="section">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">Instalaciones</span>
+        <span class="section-tag">INSTALACIONES</span>
         <h2>Nuestras Habitaciones</h2>
       </div>
+
       <div class="cards-grid">
         <div class="card">
-          <div class="card-img" style="background-image: url('img/habitacion.jpeg');"></div>
+          <div class="card-img-wrapper">
+            <img src="img/habitacion.jpeg" alt="Habitación Confort">
+          </div>
           <div class="card-body">
             <h3>Habitación Confort</h3>
             <p>Acomodación privada equipada con cama confortable, televisión, ventilación y baño privado.</p>
-            <span class="price">Consultar tarifa</span>
+            <span class="price">Aire Fresco</span>
           </div>
         </div>
+
         <div class="card">
-          <div class="card-img" style="background-image: url('img/entrada.jpeg');"></div>
+          <div class="card-img-wrapper">
+            <img src="img/entrada.jpeg" alt="Zonas Comunes & Pasillos">
+          </div>
           <div class="card-body">
             <h3>Zonas Comunes & Pasillos</h3>
             <p>Espacios amplios, iluminados y un entorno tranquilo para el descanso de todos los huéspedes.</p>
             <span class="price">Ambiente Familiar</span>
           </div>
         </div>
+
         <div class="card">
-          <div class="card-img" style="background-image: url('img/hotel.jpeg');"></div>
+          <div class="card-img-wrapper">
+            <img src="img/habitacion2.jpeg" alt="Habitación para todos">
+          </div>
+          <div class="card-body">
+            <h3>Habitación para todos</h3>
+            <p>Acomodación equipada para todos.</p>
+            <span class="price">Un buen lugar para descansar</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img src="img/parqueadero.jpeg" alt="Parqueadero">
+          </div>
+          <div class="card-body">
+            <h3>Parqueadero</h3>
+            <p>Parqueadero exclusivo para clientes.</p>
+            <span class="price">Seguridad y Comodidad</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img src="img/hotel.jpeg" alt="Fachada & Acceso">
+          </div>
           <div class="card-body">
             <h3>Fachada & Acceso</h3>
             <p>Fácil localización en el municipio con acceso directo a restaurantes y transporte local.</p>
@@ -80,29 +113,30 @@
   </section>
 
   <!-- Sección Servicios -->
-  <section id="servicios" class="section services-section">
+  <section id="servicios" class="section">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">Comodidades</span>
+        <span class="section-tag">COMODIDADES</span>
         <h2>Servicios Destacados</h2>
       </div>
-      <div class="services-grid">
-        <div class="service-box">
-          <div class="service-icon">📶</div>
+
+      <div class="services-list">
+        <div class="service-item">
+          <div class="service-icon">📊</div>
           <h3>Wi-Fi</h3>
           <p>Conexión a internet inalámbrico en todas las habitaciones y áreas comunes.</p>
         </div>
-        <div class="service-box">
+        <div class="service-item">
           <div class="service-icon">❄️</div>
           <h3>Ambiente Fresco</h3>
           <p>Habitaciones dotadas de ventilador o aire acondicionado para un mejor descanso.</p>
         </div>
-        <div class="service-box">
+        <div class="service-item">
           <div class="service-icon">📺</div>
           <h3>Televisión por Cable</h3>
           <p>Televisión en cada habitación con variedad de canales de entretenimiento.</p>
         </div>
-        <div class="service-box">
+        <div class="service-item">
           <div class="service-icon">📍</div>
           <h3>Ubicación Estratégica</h3>
           <p>Cerca al parque principal de Rivera y con fácil salida hacia las Termales.</p>
@@ -110,16 +144,37 @@
       </div>
     </div>
   </section>
+  <!-- Sección Ubicación -->
+<section id="ubicacion" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">CÓMO LLEGAR</span>
+      <h2>Nuestra Ubicación</h2>
+      <p style="color: #94a3b8; max-width: 600px; margin: 0.5rem auto 0;">Visítanos en Rivera, Huila. Explora nuestro hotel y alrededores en la vista interactiva:</p>
+    </div>
+    <div class="map-wrapper">
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.821!2d-75.254411!3d2.778146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3b7405be1b35e7%3A0x6b63d91795e1e12!2sCl.%205%20%233-53%2C%20Rivera%2C%20Huila!5e0!3m2!1ses!2sco!4v1700000000000!5m2!1ses!2sco" 
+    width="100%" 
+    height="100%" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+  </div>
+</section>
 
   <!-- Sección Contacto -->
-  <section id="contacto" class="section contact-section">
+  <section id="contacto" class="section">
     <div class="container">
       <div class="contact-card">
         <h2>Reserva tu Estadía</h2>
         <p>Escríbenos directamente para cotizar tu estancia o verificar disponibilidad de habitaciones.</p>
-        <a href="https://wa.me/573123167362?text=Hola,%20quisiera%20consultar%20disponibilidad%20y%20precios%20en%20el%20Hotel%20Mi%20Quinta" target="_blank" class="btn-whatsapp">
-          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
-            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+        <a href="https://wa.me/573000000000" target="_blank" rel="noopener noreferrer" class="btn-wsp-inline">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592z"/>
           </svg>
           Reservar por WhatsApp
         </a>
@@ -127,17 +182,9 @@
     </div>
   </section>
 
-  <!-- Botón Flotante -->
-  <a href="https://wa.me/573123167362?text=Hola,%20deseo%20más%20información%20sobre%20el%20Hotel%20Mi%20Quinta" target="_blank" class="whatsapp-float" aria-label="Contacto WhatsApp">
-    <svg viewBox="0 0 24 24" width="32" height="32" fill="#ffffff">
-      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
-    </svg>
-  </a>
-
-  <!-- Contenedor de Olas Clásicas -->
+  <!-- Contenedor Olas -->
   <div class="waves-container">
-    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
       <defs>
         <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
       </defs>
@@ -150,9 +197,19 @@
     </svg>
   </div>
 
-  <!-- Pie de página -->
+  <!-- Footer -->
   <footer>
     <div class="footer-content">
-      <p>&copy; 2026 Hotel Mi Quinta - Rivera, Huila. Todos los derechos reservados.</p>
+      <p>&copy; 2026 Hotel Mi Kinta - Rivera, Huila. Todos los derechos reservados.</p>
     </div>
   </footer>
+
+  <!-- Botón Flotante WhatsApp -->
+  <a href="https://wa.me/573000000000" class="wsp-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#ffffff" viewBox="0 0 16 16">
+      <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.068-.315-.099-.448.099-.133.197-.513.646-.629.776-.117.133-.232.149-.43.05-.197-.099-.834-.308-1.588-.98-.587-.523-.984-1.17-1.1-1.367-.116-.198-.013-.304.087-.403.089-.088.197-.232.296-.347.099-.116.132-.197.197-.329.066-.133.033-.248-.017-.347-.05-.099-.448-1.082-.614-1.482-.162-.389-.327-.336-.448-.342-.115-.005-.247-.006-.38-.006a.729.729 0 0 0-.529.247c-.182.198-.696.68-.696 1.658 0 .979.712 1.928.812 2.062.099.133 1.402 2.142 3.398 3.002.475.205.846.328 1.135.421.477.152.911.13 1.254.079.383-.057 1.17-.478 1.336-.94.166-.462.166-.858.116-.94-.05-.083-.182-.133-.38-.232z"/>
+    </svg>
+  </a>
+
+</body>
+</html>
