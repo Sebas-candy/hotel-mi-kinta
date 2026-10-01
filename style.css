@@ -566,3 +566,105 @@ img, svg {
   border-radius: 12px;
   overflow: hidden;
 }
+/* --- CAMBIO A TEMA BLANCO Y NEGRO --- */
+html, body {
+  background-color: #ffffff !important;
+  color: #111827 !important;
+}
+
+/* Barra de navegación */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+  color: #000000 !important;
+}
+
+.nav-links a {
+  color: #374151 !important;
+}
+
+.nav-links a:hover {
+  color: #000000 !important;
+}
+
+/* Hero Overlay */
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.65) !important; /* Mantiene la fachada visible con contraste */
+}
+
+/* Encabezados y etiquetas */
+.section-tag, .hero-subtitle, .price {
+  color: #2563eb !important; /* Azul sutil para resaltar (o cámbialo a #000000 si lo quieres 100% negro) */
+}
+
+.section-header h2, .contact-card h2, .card-body h3, .service-item h3 {
+  color: #000000 !important;
+}
+
+.section-desc, .card-body p, .service-item p, .contact-card p, #video-tour p {
+  color: #4b5563 !important;
+}
+
+/* Tarjetas y Contenedores */
+.card, .service-item, .contact-card, .video-wrapper, .map-wrapper {
+  background-color: #f9fafb !important;
+  border: 1px solid #e5e7eb !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Botón Principal */
+.btn-primary {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+.btn-primary:hover {
+  background-color: #1f2937 !important;
+}
+
+/* Secciones generales */
+.section, .waves-container {
+  background-color: #ffffff !important;
+}
+
+/* Olas del pie de página */
+.parallax > use:nth-child(1) { fill: rgba(0, 0, 0, 0.1) !important; }
+.parallax > use:nth-child(2) { fill: rgba(0, 0, 0, 0.2) !important; }
+.parallax > use:nth-child(3) { fill: rgba(0, 0, 0, 0.4) !important; }
+.parallax > use:nth-child(4) { fill: #000000 !important; }
+
+/* Footer */
+footer {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+/* --- MEJORA DE VISIBILIDAD EN EL HERO --- */
+.hero-subtitle {
+  color: #38bdf8 !important; /* Azul claro brillante para que no se pierda en la imagen */
+  font-weight: 700 !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.hero-description {
+  color: #f8fafc !important; /* Texto en blanco para máxima lectura */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Botón "Ver Habitaciones" llamativo */
+.btn-primary {
+  background-color: #2563eb !important; /* Azul vibrante */
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  border: 2px solid #ffffff !important; /* Borde blanco para mayor contraste */
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.5) !important;
+  transition: all 0.3s ease !important;
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8 !important;
+  transform: translateY(-3px) scale(1.05) !important;
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.7) !important;
+}
