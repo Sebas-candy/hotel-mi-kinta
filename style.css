@@ -1,23 +1,9 @@
-/* BLOQUEO TOTAL DE SCROLL HORIZONTAL */
-*, *::before, *::after {
-  box-sizing: border-box !important;
-}
+/* ==========================================
+   PALETA DORADO & NEGRO - HOTEL MI KINTA
+   ========================================== */
 
-html {
-  overflow-x: hidden !important;
-  width: 100vw !important;
-  position: relative;
-}
-
-body {
-  overflow-x: hidden !important;
-  width: 100% !important;
-  position: relative;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-/* --- RESET GLOBAL & BLOQUEO DE DESBORDAMIENTO --- */
-*, *::before, *::after {
+/* --- RESET Y BASE --- */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -26,10 +12,10 @@ body {
 html, body {
   width: 100%;
   max-width: 100vw;
-  overflow-x: hidden !important; /* Bloquea cualquier scroll horizontal */
-  background-color: #0b1329;
-  color: #f8fafc;
+  overflow-x: hidden;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background-color: #08080a; /* Negro de lujo carbón */
+  color: #f1f5f9;
   line-height: 1.6;
 }
 
@@ -38,27 +24,29 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 5%;
-  background-color: rgba(11, 19, 41, 0.95);
-  backdrop-filter: blur(10px);
+  padding: 1.2rem 5%;
+  background-color: rgba(8, 8, 10, 0.95);
+  backdrop-filter: blur(12px);
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2); /* Borde fino dorado */
 }
 
 .logo {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: #38bdf8;
-  white-space: nowrap;
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #d4af37; /* Dorado principal */
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
 
 .nav-links {
   display: flex;
   list-style: none;
-  gap: 1.5rem;
+  gap: 1.8rem;
 }
 
 .nav-links a {
@@ -70,19 +58,18 @@ html, body {
 }
 
 .nav-links a:hover {
-  color: #38bdf8;
+  color: #f3e5ab; /* Dorado suave */
 }
 
-/* --- HERO SECTION --- */
+/* --- HERO / PORTADA --- */
 .hero-section {
   position: relative;
   min-height: 100vh;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 6rem 1.25rem 2rem;
+  padding: 6rem 1rem 2rem;
   overflow: hidden;
 }
 
@@ -102,112 +89,106 @@ html, body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(11, 19, 41, 0.85);
+  background: linear-gradient(180deg, rgba(8, 8, 10, 0.85) 0%, rgba(8, 8, 10, 0.92) 100%);
   z-index: 2;
 }
 
 .hero-content {
   position: relative;
   z-index: 3;
-  width: 100%;
   max-width: 800px;
-  margin: 0 auto;
 }
 
 .hero-subtitle {
-  color: #38bdf8;
-  font-weight: 600;
-  letter-spacing: 2px;
+  color: #d4af37;
+  font-weight: 700;
+  letter-spacing: 3px;
   text-transform: uppercase;
   font-size: 0.85rem;
 }
 
 .hero-title {
-  font-size: 3.2rem;
+  font-size: 3.5rem;
   font-weight: 800;
   margin: 0.5rem 0 1rem;
   color: #ffffff;
-  word-wrap: break-word;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
 }
 
 .hero-description {
   font-size: 1.1rem;
-  color: #94a3b8;
+  color: #cbd5e1;
   margin-bottom: 2rem;
 }
 
+/* Botón Principal Dorado */
 .btn-primary {
   display: inline-block;
-  padding: 0.8rem 2rem;
-  background-color: #0284c7;
-  color: #ffffff;
+  padding: 0.85rem 2.2rem;
+  background: linear-gradient(135deg, #d4af37 0%, #aa7c11 100%);
+  color: #000000; /* Texto negro para máximo contraste */
   text-decoration: none;
   border-radius: 50px;
-  font-weight: 600;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
 }
 
 .btn-primary:hover {
-  background-color: #0369a1;
+  background: linear-gradient(135deg, #f3e5ab 0%, #d4af37 100%);
   transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
 }
 
 /* --- SECCIONES GENERALES --- */
 .section {
-  padding: 4rem 1.25rem;
-  width: 100%;
+  padding: 5rem 5%;
+  background-color: #08080a;
 }
 
 .container {
-  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .section-header {
   text-align: center;
-  margin-bottom: 2.5rem;
+  margin-bottom: 3rem;
 }
 
 .section-tag {
-  color: #38bdf8;
+  color: #d4af37;
   font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .section-header h2 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin-top: 0.3rem;
+  color: #ffffff;
 }
 
-.section-desc {
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
-  color: #94a3b8;
-}
-
-/* --- TARJETAS --- */
+/* --- TARJETAS HABITACIONES --- */
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-  width: 100%;
+  gap: 2rem;
 }
 
 .card {
-  background-color: #172544;
-  border-radius: 12px;
+  background-color: #121216;
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  border-radius: 14px;
   overflow: hidden;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
-  width: 100%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-6px);
+  border-color: #d4af37;
 }
 
 .card-img-wrapper {
@@ -224,49 +205,53 @@ html, body {
 }
 
 .card-body {
-  padding: 1.25rem;
+  padding: 1.5rem;
 }
 
 .card-body h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.4rem;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
 }
 
 .card-body p {
   color: #94a3b8;
   font-size: 0.9rem;
-  margin-bottom: 0.8rem;
+  margin-bottom: 1rem;
 }
 
 .price {
-  color: #38bdf8;
-  font-weight: 600;
+  color: #d4af37;
+  font-weight: 700;
   font-size: 0.85rem;
+  text-transform: uppercase;
 }
 
 /* --- SERVICIOS --- */
 .services-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.25rem;
-  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  text-align: center;
 }
 
 .service-item {
-  background-color: #172544;
-  padding: 1.5rem 1rem;
-  border-radius: 12px;
-  text-align: center;
+  background-color: #121216;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  padding: 2rem 1.5rem;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
 
 .service-icon {
   font-size: 2rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .service-item h3 {
-  margin-bottom: 0.4rem;
-  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  color: #ffffff;
 }
 
 .service-item p {
@@ -274,67 +259,101 @@ html, body {
   font-size: 0.85rem;
 }
 
-/* --- CONTACTO / TARJETA RESERVA --- */
+/* --- MAPA --- */
+.map-wrapper {
+  width: 100%;
+  height: 380px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  background-color: #121216;
+}
+
+/* --- CONTACTO / RESERVA --- */
+#contacto {
+  padding-bottom: 0 !important;
+}
+
 .contact-card {
-  background-color: #172544;
-  padding: 2.5rem 1.25rem;
+  background-color: #121216;
+  border: 1px solid #d4af37;
+  padding: 3rem 2rem;
   border-radius: 16px;
   text-align: center;
-  width: 100%;
-  max-width: 500px;
+  max-width: 600px;
   margin: 0 auto;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
 }
 
 .contact-card h2 {
-  font-size: 1.75rem;
-  margin-bottom: 0.6rem;
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+  color: #ffffff;
 }
 
 .contact-card p {
-  color: #94a3b8;
-  font-size: 0.9rem;
+  color: #cbd5e1;
+  font-size: 0.95rem;
 }
 
 .btn-wsp-inline {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
   gap: 0.5rem;
   margin-top: 1.5rem;
-  padding: 0.8rem 1.5rem;
+  padding: 0.85rem 2rem;
   background-color: #25d366;
   color: #ffffff;
   text-decoration: none;
   border-radius: 50px;
-  font-weight: 600;
-  max-width: 100%;
-  font-size: 0.95rem;
+  font-weight: 700;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* --- OLAS DE AGUA Y FOOTER --- */
+.btn-wsp-inline:hover {
+  background-color: #128c7e;
+  transform: translateY(-2px);
+}
+
+/* --- ESTRUCTURA UNIFICADA DE OLAS DORADAS Y FOOTER NEGRO --- */
+.site-footer-wrapper {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-top: 3rem !important;
+  padding: 0 !important;
+  display: block !important;
+  clear: both !important;
+  position: static !important;
+}
+
 .waves-container {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  margin-top: 2rem;
-  background-color: #0b1329;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 0 !important;
+  overflow: hidden !important;
+  display: block !important;
 }
 
 .waves {
-  width: 100%;
-  height: 70px;
-  min-height: 70px;
-  display: block;
+  width: 100% !important;
+  min-width: 100% !important;
+  height: 70px !important;
+  display: block !important;
+  margin: 0 !important;
 }
 
 .parallax > use {
   animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
 }
 
-.parallax > use:nth-child(1) { animation-delay: -2s; animation-duration: 7s; }
-.parallax > use:nth-child(2) { animation-delay: -3s; animation-duration: 10s; }
-.parallax > use:nth-child(3) { animation-delay: -4s; animation-duration: 13s; }
-.parallax > use:nth-child(4) { animation-delay: -5s; animation-duration: 20s; }
+/* Capas de olas animadas en tonalidades doradas */
+.parallax > use:nth-child(1) { animation-delay: -2s; animation-duration: 7s; fill: rgba(212, 175, 55, 0.2); }
+.parallax > use:nth-child(2) { animation-delay: -3s; animation-duration: 10s; fill: rgba(212, 175, 55, 0.4); }
+.parallax > use:nth-child(3) { animation-delay: -4s; animation-duration: 13s; fill: rgba(170, 124, 17, 0.6); }
+.parallax > use:nth-child(4) { animation-delay: -5s; animation-duration: 20s; fill: #121216; }
 
 @keyframes move-forever {
   0% { transform: translate3d(-90px, 0, 0); }
@@ -342,329 +361,118 @@ html, body {
 }
 
 footer {
-  background-color: #0284c7;
-  padding: 1.5rem 1rem;
-  text-align: center;
-  color: #ffffff;
-  font-size: 0.85rem;
-  width: 100%;
+  background-color: #121216 !important;
+  color: #d4af37 !important; /* Texto dorado en el pie de página */
+  border-top: 1px solid rgba(212, 175, 55, 0.2) !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 1.8rem 1rem !important;
+  text-align: center !important;
+  font-size: 0.9rem !important;
+  font-weight: 500 !important;
+  margin: 0 !important;
+  display: block !important;
 }
 
-/* --- BOTÓN FLOTANTE WHATSAPP --- */
+/* --- BOTÓN FLOTANTE DE WHATSAPP --- */
 .wsp-float {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 52px;
-  height: 52px;
+  bottom: 25px;
+  right: 25px;
+  width: 55px;
+  height: 55px;
   background-color: #25d366;
   color: #ffffff;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
   z-index: 9999;
   text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-/* --- MÓVIL (AJUSTES ESPECÍFICOS) --- */
+.wsp-float:hover {
+  background-color: #128c7e;
+  transform: scale(1.1);
+}
+
+/* --- RESPONSIVE MÓVIL --- */
 @media (max-width: 768px) {
   .nav-links {
-    display: none; /* Oculta menú de texto en celular para evitar desborde */
+    display: none;
   }
-
-  .navbar {
-    justify-content: center;
-  }
-
+  
   .hero-title {
-    font-size: 2.1rem;
+    font-size: 2.2rem;
   }
 
-  .hero-description {
-    font-size: 0.95rem;
-  }
-
-  .cards-grid {
-    grid-template-columns: 1fr; /* Una sola columna perfectamente centrada */
-  }
-
-  .services-list {
-    grid-template-columns: 1fr;
-  }
-}
-/* --- ESTILOS DEL MAPA --- */
-.map-wrapper {
-  width: 100%;
-  height: 380px;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
-  border: 1px solid #1e293b;
-}
-
-@media (max-width: 768px) {
   .map-wrapper {
     height: 280px;
   }
+
+  .waves {
+    height: 50px !important;
+  }
 }
-/* --- CORRECCIÓN DEFINITIVA DE CENTRADO Y DESBORDE EN MÓVILES --- */
-html, body {
-  width: 100% !important;
-  max-width: 100vw !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  overflow-x: hidden !important; /* Corta el espacio blanco sobrante */
+/* --- ESTILOS DE LA SECCIÓN ACERCA DE (GRID DE 2 COLUMNAS) --- */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
 }
 
-/* Fuerza a todas las secciones y contenedores a ajustarse al ancho de pantalla */
-section, .section, .container, header, footer {
-  width: 100% !important;
-  max-width: 100vw !important;
-  box-sizing: border-box !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
+.about-img-wrapper {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 2px solid #d4af37; /* Borde dorado destacado */
+  box-shadow: 0 12px 30px rgba(212, 175, 55, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Centra el contenido dentro de cada contenedor */
-.container {
-  padding-left: 1rem !important;
-  padding-right: 1rem !important;
-  margin: 0 auto !important;
+.about-img-wrapper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(212, 175, 55, 0.4);
 }
 
-/* Evita que los grids o tarjetas rompan el ancho */
-.cards-grid, .services-list {
-  width: 100% !important;
-  margin: 0 auto !important;
-  box-sizing: border-box !important;
-}
-.waves-container {
-  position: relative;
+.promo-img {
   width: 100%;
-  overflow: hidden !important; /* Evita que el movimiento de las olas empuje la pantalla */
-}
-
-.waves {
-  width: 100%;
-  display: block;
-}
-/* --- CORRECCIÓN DEFINITIVA DE SCROLL HORIZONTAL --- */
-
-/* 1. Bloqueo estricto a nivel de raíz */
-html {
-  overflow-x: hidden !important;
-  width: 100% !important;
-  max-width: 100% !important;
-}
-
-body {
-  overflow-x: hidden !important;
-  width: 100% !important;
-  max-width: 100% !important;
-  position: relative !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-/* 2. Corregir barra de navegación (causante muy común) */
-.navbar {
-  width: 100% !important;
-  max-width: 100% !important;
-  box-sizing: border-box !important;
-  left: 0 !important;
-  right: 0 !important;
-}
-
-/* 3. Asegurar que NINGÚN elemento interno sea más grande que la pantalla */
-header, section, footer, div, .container, .cards-grid, .card, img, svg {
-  max-width: 100% !important;
-  box-sizing: border-box !important;
-}
-
-/* 4. Asegurar que las imágenes no desborden */
-img, svg {
   height: auto;
-}
-
-/* 5. Contenedor de las olas */
-.waves-container {
-  width: 100% !important;
-  max-width: 100% !important;
-  overflow: hidden !important;
-  position: relative !important;
-}
-.map-wrapper {
-  width: 100%;
-  max-width: 100%;
-  height: 400px;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
-  border: 1px solid #1e293b;
-}
-
-@media (max-width: 768px) {
-  .map-wrapper {
-    height: 300px;
-  }
-}
-/* --- SECCIÓN VIDEO RECORRIDO (MÁS GRANDE Y FLUIDO) --- */
-#video-tour .container {
-  padding-left: 0.5rem !important;
-  padding-right: 0.5rem !important;
-}
-
-.video-wrapper {
-  position: relative;
-  width: 100%;
-  max-width: 950px;
-  margin: 0 auto;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
-  border: 1px solid #1e293b;
-  background-color: #172544;
-  aspect-ratio: 16 / 9; /* Mantiene la proporción horizontal */
-}
-
-.video-wrapper video,
-.video-wrapper iframe {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
   display: block;
+  object-fit: cover;
 }
 
-/* Ajuste específico para celulares */
-@media (max-width: 768px) {
-  .video-wrapper {
-    width: 100% !important;
-    border-radius: 12px;
-    /* Si el video original está grabado en formato vertical (estilo Reel/TikTok), 
-       descomenta la siguiente línea para darle un aspecto vertical: */
-    /* aspect-ratio: 9 / 16; */
+.about-subtitle {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.highlights-list {
+  list-style: none;
+  margin: 1.5rem 0;
+  padding: 0;
+}
+
+.highlights-list li {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.gold-icon {
+  font-size: 1.1rem;
+}
+
+/* Adaptación a dispositivos móviles */
+@media (max-width: 868px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
-}
-/* --- HACER EL VIDEO MÁS GRANDE EN MÓVILES --- */
-#video-tour {
-  padding-left: 0.5rem !important;
-  padding-right: 0.5rem !important;
-}
-
-#video-tour .container {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  width: 100% !important;
-  max-width: 100% !important;
-}
-
-.video-wrapper {
-  width: 100% !important;
-  max-width: 100% !important;
-  border-radius: 12px;
-  overflow: hidden;
-}
-/* --- CAMBIO A TEMA BLANCO Y NEGRO --- */
-html, body {
-  background-color: #ffffff !important;
-  color: #111827 !important;
-}
-
-/* Barra de navegación */
-.navbar {
-  background-color: rgba(255, 255, 255, 0.95) !important;
-  border-bottom: 1px solid #e5e7eb;
-}
-
-.logo {
-  color: #000000 !important;
-}
-
-.nav-links a {
-  color: #374151 !important;
-}
-
-.nav-links a:hover {
-  color: #000000 !important;
-}
-
-/* Hero Overlay */
-.hero-overlay {
-  background: rgba(0, 0, 0, 0.65) !important; /* Mantiene la fachada visible con contraste */
-}
-
-/* Encabezados y etiquetas */
-.section-tag, .hero-subtitle, .price {
-  color: #2563eb !important; /* Azul sutil para resaltar (o cámbialo a #000000 si lo quieres 100% negro) */
-}
-
-.section-header h2, .contact-card h2, .card-body h3, .service-item h3 {
-  color: #000000 !important;
-}
-
-.section-desc, .card-body p, .service-item p, .contact-card p, #video-tour p {
-  color: #4b5563 !important;
-}
-
-/* Tarjetas y Contenedores */
-.card, .service-item, .contact-card, .video-wrapper, .map-wrapper {
-  background-color: #f9fafb !important;
-  border: 1px solid #e5e7eb !important;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05) !important;
-}
-
-/* Botón Principal */
-.btn-primary {
-  background-color: #000000 !important;
-  color: #ffffff !important;
-}
-
-.btn-primary:hover {
-  background-color: #1f2937 !important;
-}
-
-/* Secciones generales */
-.section, .waves-container {
-  background-color: #ffffff !important;
-}
-
-/* Olas del pie de página */
-.parallax > use:nth-child(1) { fill: rgba(0, 0, 0, 0.1) !important; }
-.parallax > use:nth-child(2) { fill: rgba(0, 0, 0, 0.2) !important; }
-.parallax > use:nth-child(3) { fill: rgba(0, 0, 0, 0.4) !important; }
-.parallax > use:nth-child(4) { fill: #000000 !important; }
-
-/* Footer */
-footer {
-  background-color: #000000 !important;
-  color: #ffffff !important;
-}
-/* --- MEJORA DE VISIBILIDAD EN EL HERO --- */
-.hero-subtitle {
-  color: #38bdf8 !important; /* Azul claro brillante para que no se pierda en la imagen */
-  font-weight: 700 !important;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
-}
-
-.hero-description {
-  color: #f8fafc !important; /* Texto en blanco para máxima lectura */
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
-}
-
-/* Botón "Ver Habitaciones" llamativo */
-.btn-primary {
-  background-color: #2563eb !important; /* Azul vibrante */
-  color: #ffffff !important;
-  font-weight: 700 !important;
-  border: 2px solid #ffffff !important; /* Borde blanco para mayor contraste */
-  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.5) !important;
-  transition: all 0.3s ease !important;
-}
-
-.btn-primary:hover {
-  background-color: #1d4ed8 !important;
-  transform: translateY(-3px) scale(1.05) !important;
-  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.7) !important;
 }
